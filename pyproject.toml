@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cve-2022-41343"
+version = "1.0.0"
+authors = [
+  { name="Brandon Kreisel", email="BKreisel@users.noreply.github.com" },
+]
+description = "Python Exploit for CVE-2022-41343 (dompdf RCE)"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "rich",
+]
+
+[project.scripts]
+cve-2022-41343 = "cve_2022_41343.main:cli"
+
+[project.urls]
+"Homepage" = "https://github.com/BKreisel/CVE-2022-41343"
+"Bug Tracker" = "https://github.com/BKreisel/CVE-2022-41343/issues"
